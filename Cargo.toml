@@ -1,0 +1,12 @@
+[workspace]
+members = [
+    "libinput_scroll_hook",
+]
+resolver = "2"
+
+[profile.release]
+opt-level = "s"
+lto = true
+strip = "symbols"
+codegen-units = 1
+panic = "abort"

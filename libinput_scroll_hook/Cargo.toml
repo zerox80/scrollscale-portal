@@ -1,0 +1,13 @@
+[package]
+name = "libinput_scroll_hook"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <you@example.com>"]
+description = "LD_PRELOAD hook to scale touchpad scrolling values for libinput under GNOME/Wayland."
+license = "MIT OR Apache-2.0"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+libc = "0.2"
